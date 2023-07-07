@@ -8,7 +8,7 @@ class Knight
     moves = POSSIBLE_MOVES.map do |move|
       next_position = calculate_position(position, move)
 
-      next_position if valid?(next_position) && next_position != position
+      next_position if valid?(next_position) 
     end.compact
     moves
   end
